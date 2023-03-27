@@ -9,10 +9,10 @@ public class MergeSortIterative {
             x[0] = arr[i];
             list.add(x);
         }
-        int listLength = arr.length;
+        int listLength = arr.length-1;
         int currenIndex = 0;
         while (list.get(0).length != arr.length) {
-            if(listLength-1 != currenIndex){
+            if(listLength != currenIndex){
                int[] y =  merge(list.get(currenIndex), list.get(currenIndex+1));
                list.remove(currenIndex+1);
                list.remove(currenIndex);
@@ -61,7 +61,7 @@ public class MergeSortIterative {
     }
 
     public static void main(String[] args) {
-        int[] arr = {5,4,3,2,6};
+        int[] arr = {5,4,3,2,6,23,1,34,355,12222,11,12};
         int[] arr2 = mergeSort(arr);
         System.out.println(Arrays.toString(arr2));
     }

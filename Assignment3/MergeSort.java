@@ -45,7 +45,7 @@ public class MergeSort {
         return combined;
     }
     public static void main(String[] args) {
-        int[] arr = {5,4,3,2,6};
+        int[] arr = {5,4,3,2,6,1,6,8,122,7,444};
         int[] arr2 = mergeSort(arr);
         System.out.println(Arrays.toString(arr2));
     }

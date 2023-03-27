@@ -50,7 +50,7 @@ public class HeapSort {
       public static void main(String[] args) {
     
         HeapSort aHeapTree = new HeapSort();
-        int[] arr = {1,2,55,63,13,45,99,4,67,11,33};
+        int[] arr = {1,2,55,63,3,13,45,99,4,67,11,33,1000};
         aHeapTree.heapSort(arr);
         int i = arr.length;
         while(i > 0){
